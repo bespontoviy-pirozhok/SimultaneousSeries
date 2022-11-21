@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_padding"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/v_red"
+        android:layout_width="@dimen/main_square"
+        android:layout_height="@dimen/main_square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <View
+        android:id="@+id/v_yellow"
+        android:layout_width="@dimen/main_square"
+        android:layout_height="@dimen/main_square"
+        android:layout_marginTop="@dimen/small_padding"
+        app:layout_constraintEnd_toEndOf="@+id/v_red"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/v_red"
+        app:layout_constraintTop_toBottomOf="@+id/v_red" />
+
+    <View
+        android:id="@+id/v_green"
+        android:layout_width="@dimen/main_square"
+        android:layout_height="@dimen/main_square"
+        android:layout_marginTop="@dimen/small_padding"
+        app:layout_constraintEnd_toEndOf="@+id/v_red"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/v_red"
+        app:layout_constraintTop_toBottomOf="@+id/v_yellow" />
+
+    <Button
+        android:id="@+id/bt_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
+        android:text="@string/bt_switch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_green"
+        app:layout_constraintVertical_bias="0.167" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
