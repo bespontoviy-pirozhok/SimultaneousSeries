@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name" translatable="false">Switcher</string>
     <string name="bt_switch" translatable="false">switch</string>
+    <color name="myGrey">#80606060</color>
 </resources>
